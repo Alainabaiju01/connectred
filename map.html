@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Maps</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .map-section {
+            flex: 1;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .map-section iframe {
+            width: 80%;
+            height: 80%;
+            border: 0;
+        }
+
+        .info-section {
+            flex: 1;
+            background-color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        .blood-requirements {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 columns grid */
+            grid-gap: 10px;
+        }
+
+        .blood-type {
+            background-color: #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="map-section">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3935.5360024849256!2d76.5495941735337!3d9.462020482063576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b062f5591e588e5%3A0x3976fba36fc090d3!2sSt.%20Thomas%20Hospital%20Chethipuzha%2C%20Changanassery!5e0!3m2!1sen!2sin!4v1712142427130!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="info-section">
+            <h2>St. Thomas Hospital</h2>
+        
+            <p><strong>Name:</strong> St. Thomas Hospital</p>
+            <p><strong>Address:</strong> Chethipuzha, Changanassery</p>
+            <h3>Blood Requirements</h3>
+            <div class="blood-requirements">
+                <div class="blood-type">Type A+</div>
+                <div class="blood-type">Type A-</div>
+                <div class="blood-type">Type B+</div>
+                <div class="blood-type">Type B-</div>
+                <div class="blood-type">Type AB+</div>
+                <div class="blood-type">Type AB-</div>
+                <div class="blood-type">Type O+</div>
+                <div class="blood-type">Type O-</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Your Website
+    </footer>
+</body>
+</html>
