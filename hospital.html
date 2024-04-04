@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="title">Dashboards</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    title{
+        text-align: left;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    header {
+      background-color: #c0392b;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: calc(100vh - 100px); /* Subtract header height */
+    }
+
+    .blood-type-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .blood-type-buttons button {
+      margin: 10px;
+      padding: 20px 40px;
+      font-size: 20px;
+      border: none;
+      border-radius: 10px;
+      background-color: #c0392b;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .blood-type-buttons button:hover {
+      background-color: #a52a1e;
+    }
+
+    .post-blood-requirement-button {
+      margin-bottom: 20px;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      background-color: #c0392b;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .post-blood-requirement-button:hover {
+      background-color: #a52a1e;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="title">Dashboard</h1>
+  </header>
+  <main>
+    <button class="post-blood-requirement-button" onclick="redirectToForm()">Post Blood Requirement</button>
+    <div class="blood-type-buttons">
+      <button onclick="showBloodRequests('ap')" style="background-color: #c0392b;">A+</button>
+      <button onclick="showBloodRequests('an')" style="background-color: #c0392b;">A-</button>
+      <button onclick="showBloodRequests('bp')" style="background-color: #c0392b;">B+</button>
+      <button onclick="showBloodRequests('bn')" style="background-color: #c0392b;">B-</button>
+      <button onclick="showBloodRequests('abp')" style="background-color: #c0392b;">AB+</button>
+      <button onclick="showBloodRequests('abn')" style="background-color: #c0392b;">AB-</button>
+      <button onclick="showBloodRequests('op')" style="background-color: #c0392b;">O+</button>
+      <button onclick="showBloodRequests('on')" style="background-color: #c0392b;">O-</button>
+    </div>
+  </main>
+
+  <script>
+    function showBloodRequests(bloodType) {
+      // Redirect to another page showing blood requests for the selected blood type
+      window.location.href = `${bloodType}.html`;
+    }
+
+    function redirectToForm() {
+      // Redirect to the form for posting blood requirements
+      window.location.href = 'postreq.html';
+    }
+  </script>
+</body>
+</html>
