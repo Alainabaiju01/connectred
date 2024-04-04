@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #ff4d4d;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.input-container input {
+    width: calc(100% - 30px);
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-container input:focus {
+    border-color: #ff4d4d;
+}
+
+.btn {
+    width: 100%;
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    padding: 15px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff3333;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <form id="registrationForm">
+        <div class="input-container">
+            <input type="text" placeholder="Bloodtype" name="first" required>
+        </div>
+        <div class="input-container">
+            <i class="fa fa-address-card-o"></i>
+            <input type="text" placeholder="Address" name="last" required>
+        </div>
+        <div class="input-container">
+            <i class="fa fa-phone"></i>
+            <input type="text" placeholder="Phone" name="phone" required>
+        </div>
+        <div class="input-container">
+            <br>
+            Last date of donation : <input type="date"> 
+            <i class="fa fa-"></i>  
+            <br>
+        </div>
+        <button type="button" class="btn" onclick="openLink()">Submit</button>
+    </form>
+</div>
+
+<script>
+    function openLink() {
+        // You can replace 'https://example.com' with your desired URL
+        window.location.href = 'landing.html';
+    }
+</script>
+
+</body>
+</html>
