@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blood Donation Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+  }
+  
+  header {
+    background-color: #e74c3c;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  main {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .box {
+    display: inline-block;
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-right: 20px;
+  }
+  .box1 {
+    display:block;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-right: 20px;
+  }
+
+  footer {
+    background-color: #e74c3c;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+  }
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+.topnav #myLinks {
+  display: none;
+}
+.topnav a {
+  color: white;
+  padding: 20px 25px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+.topnav a.icon {
+  background:  #e74c3c;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color:  #e74c3c;
+}
+.active {
+  background-color: #e74c3c;
+  color: white;
+}
+</style>
+
+</head>
+<body>
+<script>
+    
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+<header>
+  <h1>Hello Amal</h1>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="topnav">
+  <a href="#home" class="active">.</a>
+  <div id="myLinks">
+    <a href="donation.html">Previous Donations</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+</header>
+
+<main>
+  <div class="box">
+    <h2>Blood Type</h2>
+    <p>Your blood type: O+</p>
+  </div>
+  <div class="box">
+    <h2>Times You Donated Blood This Year</h2>
+    <p>You've donated blood 3 times this year.</p>
+  </div>
+
+  <div>
+    <h2>Requests</h2>
+    <div class="box1">
+        <h2>St. Thomas Hospital Chethipuzha</h2>
+        <p>Patient:Sunil,Phone:8999958388</p>
+      </div>
+      <div class="box1">
+        <h2>Caritas Hospital</h2>
+        <p>Patient:Akshay,Phone:8788958388</p>
+      </div>
+      <div class="box1">
+        <h2>Bharat Hospital</h2>
+        <p>Patient:Anil,Phone:7899958388
+
+  </div>
+</main>
+
+<footer>
+  <nav>
+    <a href="#">My Donations</a> | <a href="#">Profile</a>
+  </nav>
+</footer>
+
+</body>
+</html>
